@@ -31,7 +31,7 @@ const contacts = [
   { firstName: 'Jane', middleName: 'C', lastName: 'Doe' },
 ];
 
-// console.log(removeDuplicates(contacts));
+console.log(removeDuplicates(contacts));
 
 // Task 2: Merge two objects
 /**
@@ -56,7 +56,7 @@ const obj2 = {
   phoneNumber: '0700123123',
   age: 39,
 };
-// console.log(mergeObjects(obj1, obj2));
+console.log(mergeObjects(obj1, obj2));
 
 // --- Section 2: Scenario-Based Questions (60 points) ---
 
@@ -73,7 +73,7 @@ function incrementArray(arr) {
   return arr.map((num) => num + 1);
 }
 
-// console.log(incrementArray([9, 12, 33])); // Output: [10, 13, 34]
+console.log(incrementArray([9, 12, 33])); // Output: [10, 13, 34]
 
 // Scenario 2: Closures --> Explain closures with an example.
 /**
@@ -94,9 +94,9 @@ function outer() {
 }
 
 const increment = outer(); // outer will return the inner function and assign it to increment
-// console.log(increment()); // Output: 1 --> increases value of count from 0 to 1
-// console.log(increment()); // Output: 2 --> count is now 1, and then incremented to 2
-// console.log(increment()); // Output: 3 --> count is now 2, and is then incremented to 3
+console.log(increment()); // Output: 1 --> increases value of count from 0 to 1
+console.log(increment()); // Output: 2 --> count is now 1, and then incremented to 2
+console.log(increment()); // Output: 3 --> count is now 2, and is then incremented to 3
 
 // Scenario 4: Data Manipulation --> Implement the function getAdultNames(users) to filter users by age.
 /**
@@ -120,7 +120,7 @@ const users = [
   { name: 'Indah', age: 13 },
   { name: 'Tony', age: 130 },
 ];
-// console.log(getAdultNames(users)); // Output: ['Namu', 'Mwakazi', 'Tony']
+console.log(getAdultNames(users)); // Output: ['Namu', 'Mwakazi', 'Tony']
 
 // Scenario 5: Asynchronous Data Handling
 // performs async operations and returns a promise
@@ -188,7 +188,7 @@ const factorial = (n) => {
 // Memoized factorial function
 const memoizedFactorial = memoize(factorial);
 
-/*
+
 // Example usage:
 console.log(memoizedFactorial(5)); // Output: 120 (calls the original function)
 console.log(memoizedFactorial(5)); // Output: 120 (cached result)
@@ -208,4 +208,4 @@ console.timeEnd('Memoized factorial second call');
 console.time('Memoized factorial using cached factorial(5) result');
 console.log(memoizedFactorial(6));
 console.timeEnd('Memoized factorial using cached factorial(5) result');
-*/
+

@@ -19,6 +19,11 @@ This repository contains a JavaScript test with two sections:
 1. Clone the repository:
    ```bash
    git clone https://github.com/YOUR_USERNAME/javascript-coding-scenario-test.git
+   ```
 
-   Run the test:
+2. Running the test:
 You can use any JavaScript environment, like Node.js or browser developer tools, to test the code
+Navigate to the root of the repo and run the following command:
+   ```bash
+   node test.js
+   ```

@@ -161,8 +161,12 @@ async function fetchUserPosts(apiUrl) {
 // Example usage:
 fetchUserPosts('https://jsonplaceholder.typicode.com');
 
-// Scenario 6: Memoization
-// Will use factorials to demo how memoization works
+/**
+ * Scenario 6: Memoization
+ * optimization technique used in programming to speed up the execution of functions by storing the results of expensive function calls and returning the cached result when the same inputs occur again.
+ * works by "remembering" the results of previous computations to avoid redundant calculations, especially in cases where the function is called repeatedly with the same arguments.
+ * Will use factorials to demo how memoization works
+ */
 function memoize(fn) {
   const cache = new Map(); // create a new map object. handles non-string keys. preserves order of insertions.
   return function (...args) {
